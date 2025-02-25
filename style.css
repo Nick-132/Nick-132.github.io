@@ -60,6 +60,12 @@ table, th, td{
   cursor: pointer;
   background-color: #4CAF50;
 }
+/*Video floating*/
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 /*Mess*/
 .color {
   animation: 200ms ease-in-out infinite color-change; 
