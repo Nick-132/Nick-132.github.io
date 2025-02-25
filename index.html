@@ -6,14 +6,16 @@
   <link rel="icon" type="image/x-icon" href="images/bread.jpg">
   <title>WORLDS BEST WEBSITE</title>
   <link rel="stylesheet" type="text/css" href="style.css"/>
-  <script type="text/javascript">
+  <script type="text/javascript"> 
     window.onload = function(){
       alert("null");
       var audio = new Audio('music.mp3');
+      let vid = document.getElementById("shaq");
       audio.addEventListener("canplaythrough", () => {
         audio.play().catch(e => {
           window.addEventListener('click', () => {
              audio.play()
+             vid.play()
           }, { once: true })
          })
       });
@@ -21,6 +23,10 @@
   </script>
 </head>
 <body class="color">
+  <!--Shaq video-->
+  <div class="fixed">
+    <video id="shaq" height="300vh" loop preload><source src="shaq.mp4"></video>
+  </div>
   <!--Modal garbage-->
   <div id="myModal" class="modal">
     <div class="modal-content">
