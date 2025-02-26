@@ -10,12 +10,10 @@
     window.onload = function(){
       alert("null");
       var audio = new Audio('music.mp3');
-      let vid = document.getElementById("shaq");
       audio.addEventListener("canplaythrough", () => {
         audio.play().catch(e => {
           window.addEventListener('click', () => {
              audio.play()
-             vid.play()
           }, { once: true })
          })
       });
@@ -38,6 +36,10 @@
     var modal = document.getElementById("myModal");
     var span = document.getElementsByClassName("close")[0];
     span.onclick = function() {
+      var myVideo = document.getElementById('shaq');
+      if (myVideo.paused) {
+        myVideo.play();
+      }
       modal.style.display = "none";
     }
   </script>
