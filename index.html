@@ -9,14 +9,6 @@
   <script type="text/javascript"> 
     window.onload = function(){
       alert("null");
-      var audio = new Audio('music.mp3');
-      audio.addEventListener("canplaythrough", () => {
-        audio.play().catch(e => {
-          window.addEventListener('click', () => {
-             audio.play()
-          }, { once: true })
-         })
-      });
     }
   </script>
 </head>
@@ -40,6 +32,8 @@
       if (myVideo.paused) {
         myVideo.play();
       }
+      var audio = new Audio('music.mp3');
+      audio.play()
       modal.style.display = "none";
     }
   </script>
