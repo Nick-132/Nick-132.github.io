@@ -9,16 +9,14 @@
   <script type="text/javascript"> 
     window.onload = function(){
       alert("null");
-      function onLoad() {
-      let text = "Photosensitive epilepsy warning\nPress cancel or close page if prone to seizures.";
-      if (confirm(text) == true) {
+      let text;
+      if (confirm("Photosensitive epilepsy warning\nPress cancel or close page if prone to seizures.") == true) {
         const hamburger = document.getElementById("body");
         hamburger.className = "color";
       } else {
         window.close();
        }
       document.getElementById("demo").innerHTML = text;   
-      }
     }
   </script>
 </head>
