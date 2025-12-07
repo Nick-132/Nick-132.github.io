@@ -70,6 +70,9 @@ table, th, td{
 .color {
   animation: 200ms ease-in-out infinite color-change; 
 }
+.hamburger {
+   animation: 3000ms ease-in-out infinite color-change;
+}
 .shake {
   animation: rotation 20ms infinite linear;
 }
@@ -110,6 +113,7 @@ table, th, td{
     transform: rotate(360deg);
   }
 }
+/*Idk what this is tbh*/
 @keyframes condemned_blink_effect {
   0% {
     visibility: hidden;
