@@ -9,11 +9,20 @@
   <script type="text/javascript"> 
     window.onload = function(){
       alert("null");
-      alert("Photosensitive epilepsy warning");
+      function onLoad() {
+      text = "Photosensitive epilepsy warning\nPress cancel or close page if prone to seizures.";
+      if (confirm(text) == true) {
+        const hamburger = document.getElementById("body");
+        hamburger.className = "color";
+      } else {
+        window.close();
+       }
+      document.getElementById("demo").innerHTML = text;   
+      }
     }
   </script>
 </head>
-<body class="color">
+<body id="body" class="hamburger">
   <!--Shaq video-->
   <div class="fixed">
     <video id="shaq" height="300vh" loop><source src="shaq very loud.mp4"></video>
