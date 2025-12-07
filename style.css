@@ -71,7 +71,7 @@ table, th, td{
   animation: 200ms ease-in-out infinite color-change; 
 }
 .hamburger {
-   animation: 3000ms ease-in-out infinite color-change;
+   animation: 3500ms ease-in-out infinite color-change;
 }
 .shake {
   animation: rotation 20ms infinite linear;
